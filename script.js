@@ -6,7 +6,7 @@ const locationBtn = document.querySelector('#btn');
 let api
 const apiKey = 'Your-Api-Key';
 //Above enter your own api key;
-// you can api key by sigup in openWeathermap api website it after signUpit will activate in 2 hrs..
+// you can get api key by sigup in openWeathermap api website  after signUp it will active in 2 hrs..
 input.addEventListener('keyup',function(e){
     if(e.key ==='Enter'&&input.value!=''){
         requestApi(input.value);
