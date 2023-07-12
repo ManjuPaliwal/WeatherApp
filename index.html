@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="center">
+        <h1 class="heading"><i class="fa fa-arrow-left" style="visibility:hidden;"></i> Weather App</h1>
+        <div class="searchDiv">
+            <p class="active">Getting weather report..</p>
+        <input type="text" id="input" placeholder="Enter City Name" style="color:#1d0225;">
+        <button id="btn">Get Device location</button>
+        </div>
+        <div class="weatherDiv">
+            <img src="data:image/jpeg;base64,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" width="170px" alt="weatherimg">
+            <p class="temp"><span class="num">25</span><sup>o</sup>C</p>
+            <p class="weatherType"><span>Cloudy</span></p>
+            <p class="place"><i class="fa fa-map-marker"></i><span>city</span></p>
+            <div class="reportdiv">
+                <div class="temp">
+                    <i class="fa fa-thermometer-3"></i>
+                    <span class="num-2">25</span><sup>o</sup>C
+                    <p>feels like</p>
+                </div>
+                <div class="humidity">
+                    <i class="fa fa-water"></i>
+                    <span>39</span>
+                    <p>humidity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

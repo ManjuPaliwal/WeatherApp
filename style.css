@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(37, 4, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: capitalize;
+}
+.center{
+    width: 400px;
+    position: relative;
+border: 1px solid black;
+border-radius: 8px;
+}
+.fa-arrow-left{
+    cursor: pointer;
+}
+img{
+    mix-blend-mode:luminosity;
+    border-radius: 50%;
+}
+
+.circle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: orange;
+    z-index: -2;
+}
+.searchDiv{
+    width: 100%;
+display: flex;
+/* display: none; */
+flex-direction: column;
+border-radius: 8px;
+}
+.heading{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0 20px 20px 20px;
+}
+.active{
+    display: none;
+   margin:0px 20px 30px 20px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+}
+.pending{
+    color:#1d0225;
+   background-color: #c2abd4;
+   display: flex;
+}
+.error{
+    color: maroon;
+    background-color: rgb(180, 119, 119);
+    display: flex;
+}
+#btn{
+    display: block;
+    background-color: rgb(124, 73, 124);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+input,#btn,.active{
+   margin:0px 20px 30px 20px;
+   height: 50px;
+   font-size: 20px;
+   font-weight: 500;
+text-align: center;
+}
+
+.weatherDiv{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.weatherDiv p{
+    font-size:2.5em
+}
+.weatherType{
+/* font-size:5px;  */
+ margin-top: -1em;
+}
+.weatherType span{
+    font-size:.6em;
+}
+.place{
+    margin-top: -1em;
+}
+.reportdiv{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+.reportdiv p{
+    font-size:1.5em;
+}
+.reportdiv .temp{
+    padding-right: 4em;
+    border-right: 1px solid #fff;
+}
